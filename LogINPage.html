@@ -282,18 +282,17 @@
 
     <!-- <hero section starts -->
     <div class="relative lg:px-[22%] lg:bottom-44 2xl:px-[26%] ">
-
         <div class="mx-auto max-w-screen-xl rounded-lg bg-[#E7F6F7] px-4 py-8 sm:px-6 lg:px-8 relative">
-
             <div class="mx-auto max-w-lg">
                 <form action="#" class="mb-0 mt-6 space-y-4  p-4  sm:p-6 lg:p-8">
-                    <p class="text-center gilroy font-semibold  text-[#181B31] text-[24px] lg:text-[32px]">Sign In</p>
+                    <p class="text-center gilroy font-semibold text-[#181B31] text-[24px] lg:text-[32px]">Sign In</p>
 
                     <div>
-                        <label for="name"
-                            class="gilroy font-bold text-base lg:text-[18px] text-[#222222] pb-2 lg:pb-4 block">Email</label>
+                        <label for="email"
+                            class="gilroy font-bold text-base lg:text-[18px] text-[#222222] pb-2 lg:pb-4 block">Email ID</label>
                         <div class="relative">
-                            <input type="email" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            <input type="email" id="email"
+                                class="w-full rounded-lg border border-[#2CB3B9] p-4 pe-12 text-sm focus:outline-none shadow-sm"
                                 placeholder="Enter email" />
                         </div>
                     </div>
@@ -303,37 +302,39 @@
                             class="gilroy font-bold text-base lg:text-[18px] text-[#222222] pb-2 lg:pb-4 block">Password</label>
                         <div class="relative">
                             <input id="password" type="password"
-                                class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                                class="w-full rounded-lg border border-[#2CB3B9] p-4 pe-12 text-sm  focus:outline-none shadow-sm"
                                 placeholder="Enter password" />
 
+                            <!-- Toggle Icon -->
                             <span id="togglePassword"
-                                class="absolute inset-y-0 end-0 grid place-content-center px-4 cursor-pointer">
-                                <!-- Closed Eye SVG (Visible initially) -->
+                                class="absolute inset-y-0 right-4 flex items-center cursor-pointer">
+                                <!-- Closed Eye Icon (Initially visible) -->
                                 <svg id="closedEyeIcon" xmlns="http://www.w3.org/2000/svg"
-                                    class="h-6 w-6 text-[#00AB67]" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                </svg>
-
-                                <!-- Open Eye SVG (Hidden initially) -->
+                                class="h-6 w-6 text-[#00AB67]" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13.875 18.825a8.96 8.96 0 01-1.875.175c-4.478 0-8.268-2.943-9.542-7a9.935 9.935 0 013.083-4.228M9.39 4.272A9.953 9.953 0 0112 4c4.478 0 8.268 2.943 9.542 7a9.936 9.936 0 01-2.143 3.51M15 12a3 3 0 01-4.5 2.598M3 3l18 18" />
+                            </svg>
+                                
+                                <!-- Open Eye Icon (Initially hidden) -->
                                 <svg id="openEyeIcon" xmlns="http://www.w3.org/2000/svg"
-                                    class="h-6 w-6 text-[#00AB67] hidden" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 5c-7 0-9.5 7-9.5 7s2.5 7 9.5 7 9.5-7 9.5-7-2.5-7-9.5-7zM12 15a3 3 0 100-6 3 3 0 000 6z" />
-                                </svg>
+                                class="h-6 w-6 text-[#00AB67] hidden" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 5c-7 0-9.5 7-9.5 7s2.5 7 9.5 7 9.5-7 9.5-7-2.5-7-9.5-7zM12 15a3 3 0 100-6 3 3 0 000 6z" />
+                            </svg>
+                            
                             </span>
                         </div>
-                        <p class="text-right"><a href="#" class="text-[#19A7AD] gilroy font-semibold text-[13px]">Forget
-                                Your Password</a></p>
+                        <p class="text-right">
+                            <a href="#" class="text-[#19A7AD] gilroy font-semibold text-[13px]">Forgot Your
+                                Password?</a>
+                        </p>
                     </div>
 
                     <div class="flex justify-center items-center pt-4 lg:pt-12">
                         <button class="bg-[#2CB3B9] rounded-full py-2 px-5 lg:py-5 lg:px-14">
-                            <a href="" class="text-white text-sm lg:text-[18px] cabin font-semibold">Continue</a>
+                            <a href="#" class="text-white text-sm lg:text-[18px] cabin font-semibold">Continue</a>
                         </button>
                     </div>
 
@@ -349,6 +350,12 @@
         <img src="img/processdots.png" alt="" class="absolute top-36 right-0 hidden lg:block" />
         <img src="img/blogdots.png" alt="" class="absolute -bottom-32 left-0 hidden lg:block" />
     </div>
+
+
+
+
+
+
     <!-- <hero section ends -->
 
     <!-- footer section starts -->
@@ -375,6 +382,7 @@
     <!-- js -->
     <script src="js/index.js"></script>
 
+    <!-- Add script at the end of the body -->
     <script>
         const passwordInput = document.getElementById('password');
         const togglePassword = document.getElementById('togglePassword');
@@ -382,11 +390,10 @@
         const openEyeIcon = document.getElementById('openEyeIcon');
 
         togglePassword.addEventListener('click', function () {
-            // Toggle the type attribute
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
 
-            // Check and toggle the visibility of the eye icons
+            // Toggle visibility of the eye icons
             if (type === 'password') {
                 closedEyeIcon.classList.remove('hidden');
                 openEyeIcon.classList.add('hidden');
@@ -395,7 +402,6 @@
                 openEyeIcon.classList.remove('hidden');
             }
         });
-
     </script>
 
 </body>

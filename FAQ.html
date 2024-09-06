@@ -274,10 +274,10 @@
     <!-- header section starts -->
     <div class="bg-[url('/img/Aboutheader.png')] bg-center bg-cover bg-no-repeat py-6 lg:h-[400px] lg:py-20">
         <p
-            class="cabin font-semibold text-white text-2xl leading-[30px] px-4 lg:px-0 lg:text-5xl lg:leading-[56px] lg:ps-[7%]  capitalize">
+            class="cabin font-semibold text-white text-2xl leading-[30px] px-4 lg:px-0 lg:text-5xl lg:leading-[56px] 2xl:text-6xl lg:ps-[7%]  capitalize">
             FAQ
         </p>
-        <p class="gilroy font-medium text-white text-sm text-base pt-2 lg:pt-4 px-4 lg:px-0 lg:ps-[7%]">
+        <p class="gilroy font-medium text-white text-sm text-base 2xl:text-xl pt-2 lg:pt-4 px-4 lg:px-0 lg:ps-[7%]">
             Frequently asked question about Serenetax!
         </p>
     </div>
@@ -288,15 +288,15 @@
         <div class="rounded-lg bg-[#E7F6F7] relative">
             <div class="flex justify-center items-start">
                 <div class="w-full sm:w-10/12 md:w-full lg:px-8 pb-4 lg:pb-16 my-1">
-                    <h2 class="gilroy font-semibold text-[#181B31] text-[24px] lg:text-[32px] text-center pt-2 pb-2 lg:pt-14 lg:pb-10">FAQ</h2>
+                    <h2 class="gilroy font-semibold text-[#181B31] text-[24px] lg:text-[32px] 2xl:text-[38px] text-center pt-2 pb-2 lg:pt-14 lg:pb-10">FAQ</h2>
                     <ul class="flex flex-col gap-3 lg:gap-6 px-4">
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="{ isOpen: false }">
                             <h2 @click="isOpen = !isOpen"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%] cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%] cursor-pointer">
                                 <span>What should I do If I made a mistake on my federal return that I’ve already
                                     filed?</span>
                                 <svg :class="isOpen ? 'rotate-180' : ''"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 2xl:h-10 2xl:w-10  transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -307,7 +307,7 @@
                                 class="border-l-2 border-[#2CB3B9] overflow-hidden duration-500 transition-all">
                                 <!-- First paragraph -->
                                 <p style="color: #94959B;"
-                                    class="p-3 gilroy font-medium text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -319,10 +319,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(2)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>I don’t owe taxes. Can I file electronically after April15?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -332,7 +332,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -344,10 +344,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(3)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>How long it takes to file my tax returns?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -357,7 +357,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -369,10 +369,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(4)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>How can I get my Tax Refund from the Departments?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -382,7 +382,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -394,10 +394,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(5)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>How long the preparation process takes place?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -407,7 +407,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -419,10 +419,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(6)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>What do I do if I receive a notice from the IRS about my taxes?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -432,7 +432,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -444,10 +444,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(7)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>How long do I keep my records and tax returns?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -457,7 +457,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -469,10 +469,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(8)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>What is the difference between a C corporation and S corporation?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -482,7 +482,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
@@ -494,10 +494,10 @@
                         </li>
                         <li class="bg-white rounded-lg py-4 lg:py-8 px-4 lg:px-5 shadow-lg" x-data="accordion(9)">
                             <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
+                                class="flex flex-row justify-between items-center cabin font-semibold text-base lg:text-[20px] 2xl:text-[26px] text-[#2CB3B9] tracking-[2%]  cursor-pointer">
                                 <span>What are the consequences of early withdrawals from my retirement plans?</span>
                                 <svg :class="handleRotate()"
-                                    class="fill-current text-[#14B082] h-6 w-6 transform transition-transform duration-500"
+                                    class="fill-current text-[#14B082] h-6 w-6 2xl:h-10 2xl:w-10 transform transition-transform duration-500"
                                     viewBox="0 0 20 20">
                                     <path
                                         d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885z">
@@ -507,7 +507,7 @@
                             <div x-ref="tab" :style="handleToggle()"
                                 class="border-l-2 border-[#2CB3B9]  overflow-hidden max-h-0 duration-500 transition-all">
                                 <p style="color: #94959B ;"
-                                    class="p-3 gilroy font-medium  text-sm lg:text-base text-gray-900 tracking-[2%]">
+                                    class="p-3 gilroy font-medium  text-sm lg:text-base 2xl:text-xl text-gray-900 tracking-[2%]">
                                     You need to go for Amendment. Include copies of any forms and/or schedules that
                                     you’re changing or didn’t include with your original return. To avoid delays, file
                                     Form 1040-X only after you’ve filed your original return. Generally, for a credit or
